@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'djangocms_video',
     'reversion',
     'blogik5',
+    'app_slider',
 )
 
 LANGUAGES = (
