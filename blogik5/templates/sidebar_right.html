@@ -4,10 +4,62 @@
 {% block title %}{% page_attribute 'title' %}{% endblock title %}
 
 {% block content %}
-    <div style="width:80%; float:left;">
-        {% placeholder "content" %}
-    </div>
-    <div style="width:20%; float:left;">
-        {% placeholder "sidebar" %}
+    <div class="content_inner width1100 clearfix">    
+        <div class="main content_format">
+            <section class="section main_section">
+                <h2 class="h2">{% page_attribute "title" %}</h2>
+                
+                  {% placeholder "content" %}                      
+            </section>
+        </div>
+        
+        <div class="sidebar content_format">
+            <section class="section last_news">
+                <h2 class="h2">Последние новости</h2>
+                
+                {#% placeholder "sidebar" %#}
+                <article class="article">
+                    <div class="icon_outer">
+                        <img class="icon" alt="News icon" src="" width="97" height="88" />
+                    </div>
+                    
+                    <div class="text_outer">
+                        <h3 class="h3">Новость1<time class="time" datetime="2009-11-01">01.11.2009</time></h3>
+                        
+                        <p>ООО «ТЕСТ»: скупка серебра, золота и др. драгоценных металлов; скупка и переработка отходов с содержанием драгоценных металлов.</p>
+                        
+                        <a class="more_link" href="#">Подробнее</a>
+                    </div>                              
+                </article>
+                
+                <article class="article">
+                    <div class="icon_outer">
+                        <img class="icon" alt="News icon" src="" width="97" height="88" />
+                    </div>
+                    
+                    <div class="text_outer">
+                        <h3 class="h3">Новость1<time class="time" datetime="2009-11-01">01.11.2009</time></h3>
+                        
+                        <p>ООО «ТЕСТ»: скупка серебра, золота и др. драгоценных металлов; скупка и переработка отходов с содержанием драгоценных металлов.</p>
+                        
+                        <a class="more_link" href="#">Подробнее</a>
+                    </div>                              
+                </article>
+
+                <article class="article">
+                    <div class="icon_outer">
+                        <img class="icon" alt="News icon" src="" width="97" height="88" />
+                    </div>
+                    
+                    <div class="text_outer">
+                        <h3 class="h3">Новость1<time class="time" datetime="2009-11-01">01.11.2009</time></h3>
+                        
+                        <p>ООО «ТЕСТ»: скупка серебра, золота и др. драгоценных металлов; скупка и переработка отходов с содержанием драгоценных металлов.</p>
+                        
+                        <a class="more_link" href="#">Подробнее</a>
+                    </div>                              
+                </article>                          
+            </section>
+        </div>                  
     </div>
 {% endblock content %}

@@ -1,29 +1,109 @@
-{% load cms_tags menu_tags sekizai_tags %}
+{% load cms_tags staticfiles sekizai_tags menu_tags %}
 <!DOCTYPE html>
 <html>
-<head>
-    <title>{% block title %}This is my new project home page{% endblock title %}</title>
-    {% render_block "css" %}
-    <style type="text/css">
-        .nav {
-            padding-left: 0;
-        }
-        .nav li {
-            display: inline;
-            list-style-type: none;
-            padding-right: 20px;
-        }
-    </style>
-</head>
-<body>
-{% cms_toolbar %}
-<div style="width: 940px; margin:0 auto">
-    <ul class="nav">
-        {% show_menu 0 100 100 100 %}
-    </ul>
-    {% block content %}
-    {% endblock content %}
-</div>
-{% render_block "js" %}
-</body>
+    <head>
+        {% render_block "css" %}
+
+        <meta charset="utf-8" />
+        
+        <title>{% block title %}Test{% endblock title %}</title>
+        
+        <meta name="description" content="test">
+        <meta name="author" content="test">     
+
+        <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon" />-->
+        
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}" />         
+
+        <!--[if lt IE 9]>
+            <script src="js/html5/html5.js"></script>
+        <![endif]-->                
+    </head>
+
+    <body>
+        {% cms_toolbar %}
+
+        <div class="wrap">              
+            <header class="header">
+                <div class="header_inner width1100">
+                    <h1 class="h1 hide">Тестовое задание для определения навыков</h1>
+                    
+                    <a class="logo" href="#">
+                        <img class="logo_pic" alt="Test" src="{% static 'images/logo.jpg' %}" width="350" height="170" />
+                    </a>
+                    
+                    <nav class="nav_top">
+                        <h2 class="h2 hide">Навигация верхняя</h2>
+                        
+                        <ul>
+                            {% language_chooser %}                         
+                        </ul>
+                    </nav>
+
+                    <nav class="nav_main">
+                        <h2 class="h2 hide">Навигация главная</h2>
+                        
+                        <ul>
+                            {% show_menu 1 2 100 100 %}                       
+                        </ul>
+                        
+                        <a class="mail_link" href="mailto:bg@microsoft.com">
+                            <img class="mail_pic" alt="mail" src="{% static 'images/icon_mail.png' %}" width="34" height="26" />
+                        </a>
+                    </nav>  
+
+                    <div class="slider_head">   
+                        <div id="wrapper">
+                            <div class="slider-wrapper theme-default">
+                                <div id="slider" class="nivoSlider">
+                                    <a href="#">
+                                        <img src="{% static 'uploads/nivo_slider/img1.jpg' %}" alt="" title="Переплавка металлов" />
+                                    </a>
+                                    
+                                    <a href="#">
+                                        <img src="{% static 'uploads/nivo_slider/img2.jpg' %}" alt="" title="Супер переплавка металлов" />
+                                    </a>
+                                    
+                                    <a href="#">
+                                        <img src="{% static 'uploads/nivo_slider/img3.jpg' %}" alt="" title="И все рады" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="content">
+                {% block content %}{% endblock content %}   
+            </div>
+            
+            <div class="footer_correct"></div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer_inner width1100 content_format">
+                <p>2003-2009 © ООО «ТЕСТ»</p>
+                <p>Тестовое задание для определения навыков</p>
+                <a href="mailto:info@test.ru">info@test.ru</a>
+            </div>
+        </footer>           
+
+        <!-- jquery -->
+        <script src="{% static 'js/jquery/jquery.2.min.js' %}"></script>
+        
+        <!-- nivo_slider -->
+        <script src="{% static 'js/nivo_slider/jquery.nivo.slider.pack.js' %}"></script>
+        <script>
+            $(window).load(function() {
+                $('#slider').nivoSlider();
+            });
+        </script>       
+
+        <!-- helper 
+        <script src="js/helper/helper.js"></script> -->        
+
+        {% render_block "js" %}
+    </body>
 </html>
+
