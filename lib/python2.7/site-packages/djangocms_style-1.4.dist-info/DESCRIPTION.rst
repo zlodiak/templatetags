@@ -1,0 +1,45 @@
+djangocms-style
+===============
+
+A Plugin for django CMS to add CSS classes to other plugins
+
+
+Installation
+------------
+
+This plugin requires `django CMS` 2.4 or higher to be properly installed.
+
+* In your projects `virtualenv`_, run ``pip install djangocms-style``.
+* Add ``'djangocms_style'`` to your ``INSTALLED_APPS`` setting.
+* If using Django 1.7 add ``'djangocms_syle': 'djangocms_syle.migrations_django',``
+  to ``MIGRATION_MODULES``  (or define ``MIGRATION_MODULES`` if it does not exists);
+  when django CMS 3.1 will be released, migrations for Django 1.7 will be moved
+  to the standard location and the south-style ones to ``south_migrations``.
+* Run ``manage.py migrate djangocms_style``.
+
+
+Usage
+-----
+
+You can define styles in your settings.py:
+
+```
+CMS_STYLE_NAMES = (
+    ('info', _("info")),
+    ('new', _("new")),
+    ('hint', _("hint")),
+)
+```
+
+After that you can place other plugins inside this style plugin.
+It will create a div with a class that was prior selected around this plugin.
+
+Translations
+------------
+
+If you want to help translate the plugin please do it on transifex:
+
+https://www.transifex.com/projects/p/django-cms/resource/djangocms-style/
+
+
+
