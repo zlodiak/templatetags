@@ -180,7 +180,7 @@ CMS_TEMPLATES = (
     ('fullwidth.html', 'Fullwidth'),
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
-    ('all_docs.html', 'All Docs'),
+    ('news.html', 'News'),
 )
 
 CMS_PERMISSION = True

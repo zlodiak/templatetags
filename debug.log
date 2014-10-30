@@ -16492,3 +16492,81 @@ Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
 Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
 Not Found: /uploads/news/wYiEEiCK3WA.jpg
 Not Found: /ru/uploads/news/wYiEEiCK3WA.jpg/
+Internal Server Error: /ru/novosti/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/sekizai/templatetags/sekizai_tags.py", line 76, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/cms/templatetags/cms_tags.py", line 682, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 1220, in render
+    return self.nodelist.render(new_context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 156, in render
+    len_values = len(values)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 77, in __len__
+    self._fetch_all()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 776, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 84, in as_sql
+    ordering, o_params, ordering_group_by = self.get_ordering()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 403, in get_ordering
+    self.query.get_meta(), default_order=asc):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 437, in find_ordering_name
+    field, cols, alias, joins, opts = self._setup_joins(pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 470, in _setup_joins
+    pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1363, in setup_joins
+    names, opts, allow_many, allow_explicit_fk)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1283, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'date' into field. Choices are: date_create, date_event, id, image, is_active, teaser, text, title
+Not Found: /

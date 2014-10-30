@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load tags_news %}
+
+{% block title %}{% page_attribute 'title' %}{% endblock title %}
+
+{% block content %}
+    <div class="content_inner width1100 clearfix">    
+        <div class="main content_format width_auto">
+            <section class="section main_section width_auto">
+                <h2 class="h2 ">{% page_attribute "title" %}</h2>
+                 
+                  {% part_news %}                  
+            </section>
+        </div>                 
+    </div>
+{% endblock content %}

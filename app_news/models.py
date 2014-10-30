@@ -38,7 +38,7 @@ class News(models.Model):
 
 	@classmethod
 	def get_all_entries(self):
-		return self.objects.filter(is_active=True).order_by('-date')	
+		return self.objects.filter(is_active=True).order_by('-date_event')	
 
 	@classmethod
 	def get_last_entries(self):
