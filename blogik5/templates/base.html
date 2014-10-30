@@ -1,4 +1,4 @@
-{% load cms_tags staticfiles sekizai_tags menu_tags %}
+{% load cms_tags staticfiles sekizai_tags menu_tags tags_slider %}
 
 <!DOCTYPE html>
 <html>
@@ -47,29 +47,14 @@
                     </nav>  
 
                     <div class="slider_head">   
-                        <div id="wrapper">
-                            <div class="slider-wrapper theme-default">
-                                <div id="slider" class="nivoSlider">
-                                    <a href="#">
-                                        <img src="{% static 'uploads/nivo_slider/img1.jpg' %}" alt="" title="Переплавка металлов" />
-                                    </a>
-                                    
-                                    <a href="#">
-                                        <img src="{% static 'uploads/nivo_slider/img2.jpg' %}" alt="" title="Супер переплавка металлов" />
-                                    </a>
-                                    
-                                    <a href="#">
-                                        <img src="{% static 'uploads/nivo_slider/img3.jpg' %}" alt="" title="И все рады" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        {% part_slider %}
                     </div>
                 </div>
             </header>
             
             <div class="content">
                 {% block content %}{% endblock content %}   
+            }
             </div>
             
             <div class="footer_correct"></div>

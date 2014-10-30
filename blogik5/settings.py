@@ -140,6 +140,7 @@ INSTALLED_APPS = (
     'reversion',
     'blogik5',
     'app_slider',
+    'sorl.thumbnail',
 )
 
 LANGUAGES = (

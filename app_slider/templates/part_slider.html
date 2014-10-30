@@ -1,0 +1,13 @@
+{% load thumbnail %}
+
+<div id="wrapper">
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+        	{% for entry in slider_entries %}
+        		{% thumbnail entry.slide "1100x337" crop="center" as im %}
+		            <img src="{{ im.url }}" alt="{{ entry.text }}" title="{{ entry.text }}" width="{{ im.width }}" height="{{ im.height }}" />
+	         	{% endthumbnail %}  
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,6 +1,8 @@
 ﻿from django.db import models
 from datetime import datetime  
 
+from sorl.thumbnail import ImageField
+
 
 class Slider(models.Model):
 	slide = models.ImageField(
