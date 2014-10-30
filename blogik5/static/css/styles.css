@@ -55,6 +55,7 @@ html{
 
 body{	
     height:100%;	
+    min-width: 1100px;
 	margin: 0 auto;
 	background-color: #212121;
 	background-image: -webkit-linear-gradient(#202020, #212121); 
@@ -383,32 +384,68 @@ input:-moz-placeholder {
 		z-index: 110;
 	}	
 	
-		.nav_main ul li{
+		.nav_main ul > li{
 			display: inline-block;
 			padding: 20px 17px;
+			position: relative;
 		}
 		
-			.nav_main ul li a:hover{
+			.nav_main ul > li a:hover{
 				text-decoration: underline;
 			}
 			
-			.nav_main ul li.selected a,
-			.nav_main ul li a:hover{
+			.nav_main ul > li.selected a,
+			.nav_main ul > li a:hover{
 				color: #f0d458;
 				text-decoration: underline;
 			}
 			
-			.nav_main ul li a{
+			.nav_main ul > li a{
 				text-transform: uppercase;
 				font: 21px 'calibriregular', arial, sans-serif;
 				color: #fff;
 				text-decoration: none;	
 			}
 
-			.nav_main ul li ul{
+			.nav_main ul > li ul:after{
+				background: none;
+			}
+
+			.nav_main ul > li ul{
 				display: none;
+				position: absolute;
+				top: 60px;
+				left: 0px;
+				z-index: 100;
+
 			}
 			
+			.nav_main ul > li:hover ul{
+				display: block;
+				width: 100%;
+				padding-bottom: 20px;
+
+				text-align: left;
+			}	
+
+				.nav_main ul > li ul li{
+					display: block;
+					padding: 5px 20px;
+					background: none;
+
+				}	
+
+					.nav_main ul > li ul li a:hover{
+						text-decoration: none;
+					}
+
+					.nav_main ul > li ul li a{
+						text-transform: uppercase;
+						font: 12px 'calibriregular', arial, sans-serif;
+						color: #fff;
+						text-decoration: none;	
+						text-align: left;
+					}	
 
 /*************************************************************************************************************** GLOBAL_blocks : nav_top */
 .nav_top{

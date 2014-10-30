@@ -3,22 +3,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% render_block "css" %}
-
         <meta charset="utf-8" />
         
         <title>{% block title %}Test{% endblock title %}</title>
-        
-        <meta name="description" content="test">
-        <meta name="author" content="test">     
 
         <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon" />-->
         
         <link rel="stylesheet" href="{% static 'css/styles.css' %}" />         
 
-        <!--[if lt IE 9]>
-            <script src="js/html5/html5.js"></script>
-        <![endif]-->                
+        {% render_block "css" %}             
     </head>
 
     <body>
@@ -29,7 +22,7 @@
                 <div class="header_inner width1100">
                     <h1 class="h1 hide">Тестовое задание для определения навыков</h1>
                     
-                    <a class="logo" href="#">
+                    <a class="logo" href="/">
                         <img class="logo_pic" alt="Test" src="{% static 'images/logo.jpg' %}" width="350" height="170" />
                     </a>
                     

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
-{% load cms_tags %}
+{% load cms_tags sekizai_tags %}
+{% load tags_blogik5 %}
 
 {% block title %}{% page_attribute 'title' %}{% endblock title %}
 
@@ -9,7 +10,8 @@
             <section class="section main_section ">
                 <h2 class="h2">{% page_attribute "title" %}</h2>
                 
-                fffff                     
+                fffff     
+                {#% all_docs %#}                
             </section>
         </div>                 
     </div>
