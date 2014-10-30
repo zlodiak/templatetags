@@ -15704,3 +15704,783 @@ Traceback (most recent call last):
   File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
     (command, get_text_list(["'%s'" % p for p in parse_until])))
 TemplateSyntaxError: Invalid block tag: 'thumbnail', expected 'empty' \u0438\u043b\u0438 'endfor'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'tags_last_news' is not a valid tag library: Template library tags_last_news not found, tried django.templatetags.tags_last_news,django.contrib.admin.templatetags.tags_last_news,django.contrib.staticfiles.templatetags.tags_last_news,cms.templatetags.tags_last_news,mptt.templatetags.tags_last_news,menus.templatetags.tags_last_news,sekizai.templatetags.tags_last_news,blogik5.templatetags.tags_last_news,app_slider.templatetags.tags_last_news,sorl.thumbnail.templatetags.tags_last_news,app_news.templatetags.tags_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 1084, in load
+    (taglib, e))
+TemplateSyntaxError: 'part_last_news' is not a valid tag library: Template library part_last_news not found, tried django.templatetags.part_last_news,django.contrib.admin.templatetags.part_last_news,django.contrib.staticfiles.templatetags.part_last_news,cms.templatetags.part_last_news,mptt.templatetags.part_last_news,menus.templatetags.part_last_news,sekizai.templatetags.part_last_news,blogik5.templatetags.part_last_news,app_slider.templatetags.part_last_news,sorl.thumbnail.templatetags.part_last_news,app_news.templatetags.part_last_news
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/sekizai/templatetags/sekizai_tags.py", line 76, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/cms/templatetags/cms_tags.py", line 682, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 1220, in render
+    return self.nodelist.render(new_context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 156, in render
+    len_values = len(values)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 77, in __len__
+    self._fetch_all()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 776, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 84, in as_sql
+    ordering, o_params, ordering_group_by = self.get_ordering()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 403, in get_ordering
+    self.query.get_meta(), default_order=asc):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 437, in find_ordering_name
+    field, cols, alias, joins, opts = self._setup_joins(pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 470, in _setup_joins
+    pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1363, in setup_joins
+    names, opts, allow_many, allow_explicit_fk)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1283, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'date' into field. Choices are: date_create, date_event, id, image, is_active, teaser, text, title
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 80, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 58, in resolve_template
+    return loader.get_template(template)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 138, in get_template
+    template, origin = find_template(template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 127, in find_template
+    source, display_name = loader(name, dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 43, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 49, in load_template
+    template = get_template_from_string(source, origin, template_name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader.py", line 149, in get_template_from_string
+    return Template(source, origin, name)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 125, in __init__
+    self.nodelist = compile_string(template_string, origin)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 153, in compile_string
+    return parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 215, in do_extends
+    nodelist = parser.parse()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 278, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 190, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 276, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 331, in invalid_block_tag
+    (command, get_text_list(["'%s'" % p for p in parse_until])))
+TemplateSyntaxError: Invalid block tag: 'part_last_news', expected 'endblock'
+Internal Server Error: /ru/index/
+Traceback (most recent call last):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 137, in get_response
+    response = response.render()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/response.py", line 82, in rendered_content
+    content = template.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 140, in render
+    return self._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 123, in render
+    return compiled_parent._render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 134, in _render
+    return self.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/sekizai/templatetags/sekizai_tags.py", line 76, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/classytags/core.py", line 106, in render
+    return self.render_tag(context, **kwargs)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/cms/templatetags/cms_tags.py", line 682, in render_tag
+    rendered_contents = nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 1220, in render
+    return self.nodelist.render(new_context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/base.py", line 840, in render
+    bit = self.render_node(node, context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/debug.py", line 78, in render_node
+    return node.render(context)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/template/defaulttags.py", line 156, in render
+    len_values = len(values)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 77, in __len__
+    self._fetch_all()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 857, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/query.py", line 220, in iterator
+    for row in compiler.results_iter():
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 713, in results_iter
+    for rows in self.execute_sql(MULTI):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 776, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 84, in as_sql
+    ordering, o_params, ordering_group_by = self.get_ordering()
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 403, in get_ordering
+    self.query.get_meta(), default_order=asc):
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 437, in find_ordering_name
+    field, cols, alias, joins, opts = self._setup_joins(pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 470, in _setup_joins
+    pieces, opts, alias)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1363, in setup_joins
+    names, opts, allow_many, allow_explicit_fk)
+  File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1283, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'date' into field. Choices are: date_create, date_event, id, image, is_active, teaser, text, title

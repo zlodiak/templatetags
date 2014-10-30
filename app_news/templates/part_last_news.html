@@ -1,0 +1,23 @@
+{% load thumbnail %}
+
+<section class="section last_news">
+    <h2 class="h2">Последние новости</h2>
+
+    {% for entry in entries_last_news %}
+	    <article class="article">
+	        <div class="icon_outer">
+				{% thumbnail entry.image "97x88" crop="center" as im %}
+		            <img class="icon" src="{{ im.url }}" alt="{{ entry.title }}" title="{{ entry.title }}" width="{{ im.width }}" height="{{ im.height }}" />
+		     	{% endthumbnail %}  	        
+	        </div>
+	        
+	        <div class="text_outer">
+	            <h3 class="h3">{{ entry.title }}<time class="time" datetime="11-01-2009">{{ entry.date_event|date:"SHORT_DATE_FORMAT" }}</time></h3>
+	            
+	            {{ entry.teaser }}
+	            
+	            <a class="more_link" href="#">Подробнее</a>
+	        </div>                              
+	    </article>    
+    {% endfor %}                     
+</section>

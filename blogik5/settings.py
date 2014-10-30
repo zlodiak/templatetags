@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'blogik5',
     'app_slider',
     'sorl.thumbnail',
+    'app_news',
 )
 
 LANGUAGES = (
