@@ -5,11 +5,11 @@
 
     {% for entry in entries_last_news %}
 	    <article class="article">
-	        <div class="icon_outer">
+	        <a class="icon_outer fancybox" href="/media/{{ entry.image }}">
 				{% thumbnail entry.image "97x88" crop="center" as im %}
 		            <img class="icon" src="{{ im.url }}" alt="{{ entry.title }}" title="{{ entry.title }}" width="{{ im.width }}" height="{{ im.height }}" />
 		     	{% endthumbnail %}  	        
-	        </div>
+	        </a>
 	        
 	        <div class="text_outer">
 	            <h3 class="h3">{{ entry.title }}<time class="time" datetime="11-01-2009">{{ entry.date_event|date:"SHORT_DATE_FORMAT" }}</time></h3>

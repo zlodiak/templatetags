@@ -77,7 +77,21 @@
             $(window).load(function() {
                 $('#slider').nivoSlider();
             });
-        </script>       
+        </script>     
+
+        <!-- fancybox2 -->
+        <script src='{% static "js/fancybox2/jquery.fancybox2.js" %}'></script> 
+        <script>    
+            $('.fancybox').fancybox({
+                'overlayColor'        : '#ccc',
+                //'type'              : 'image',
+                helpers: {
+                    overlay: {
+                        locked: false
+                    }   
+                }               
+            });     
+        </script>             
 
         <!-- helper 
         <script src="js/helper/helper.js"></script> -->        

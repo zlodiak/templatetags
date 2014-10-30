@@ -21,3 +21,4 @@ if settings.DEBUG:
         url(r'^media/(?P<path>.*)$', 'django.views.static.serve',  # NOQA
             {'document_root': settings.MEDIA_ROOT, 'show_indexes': True}),
         ) + staticfiles_urlpatterns() + urlpatterns  # NOQA
+

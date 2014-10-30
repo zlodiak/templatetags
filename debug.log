@@ -16484,3 +16484,11 @@ Traceback (most recent call last):
   File "/home/kalinins/.virtualenvs/blogik5/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1283, in names_to_path
     "Choices are: %s" % (name, ", ".join(available)))
 FieldError: Cannot resolve keyword 'date' into field. Choices are: date_create, date_event, id, image, is_active, teaser, text, title
+Not Found: /ru/index/uploads/news/6ytLCGsxB9E.jpg/
+Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
+Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
+Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
+Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
+Not Found: /ru/index/uploads/news/wYiEEiCK3WA.jpg/
+Not Found: /uploads/news/wYiEEiCK3WA.jpg
+Not Found: /ru/uploads/news/wYiEEiCK3WA.jpg/
