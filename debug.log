@@ -2935,3 +2935,10 @@ Traceback (most recent call last):
     (lookup_view_s, args, kwargs, len(patterns), patterns))
 NoReverseMatch: Reverse for 'index' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
 Not Found: /
+Not Found: /admin
+Not Found: /admin
+Not Found: /
+Not Found: /admin
+Not Found: /
+Not Found: /фвьшт
+Not Found: /admin

@@ -205,6 +205,19 @@ input:-moz-placeholder {
 	}
 
 
+/*************************************************************************************************************** GLOBAL_blocks : main_section */
+.main_section{
+
+}
+
+	.main_section h2:first-child{
+		padding-top: 0px;
+	}
+
+	.main_section h2{
+		padding-top: 20px;
+	}
+
 /*************************************************************************************************************** GLOBAL_blocks : footer_inner */
 .footer_inner{
 
