@@ -90,10 +90,10 @@
 		//console.log(head);
 		//console.log(text);
 
-		$('#modal-10 .modal-body').html(text);
-		$('#modal-10 .modal-title').html(head);
+		$('#modal-9 .modal-body').html(text);
+		$('#modal-9 .modal-title').html(head);
 
-		$('#modal-10').modal();
+		$('#modal-9').modal();
 	});	
 })();
 

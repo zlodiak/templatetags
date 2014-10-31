@@ -4,7 +4,7 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('app_news',
-	#url(r'^/$', 'views.feedback', name='feedback'),
+	url(r'^$', 'views.news', name='news'),
 
 )
 

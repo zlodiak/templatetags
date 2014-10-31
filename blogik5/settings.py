@@ -182,6 +182,7 @@ CMS_TEMPLATES = (
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
     ('news.html', 'News'),
+    ('custom_news.html', 'Custom News'),
     ('footer.html', 'Footer'),
 )
 

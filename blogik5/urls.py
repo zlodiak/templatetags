@@ -12,6 +12,7 @@ urlpatterns = i18n_patterns('',
     url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap',
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^feedback/', include('app_feedback.urls')),
+    url(r'^novosti/', include('app_news.urls')),
     url(r'^', include('cms.urls')),
 )
 

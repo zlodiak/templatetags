@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+{% load tags_news %}
+{% load thumbnail %}
+
+{% block title %}{% page_attribute 'title' %}{% endblock title %}
+
+{% block content %}
+    <div class="content_inner width1100 clearfix">    
+        <div class="main content_format width_auto">
+            <section class="section main_section width_auto">
+                <h2 class="h2 ">{% page_attribute "title" %}</h2>
+                 
+				<section class="section all_news">
+				    <h2 class="h2 hide">Новости</h2>
+
+				    {% for entry in get_all_entries_paginated %}
+					    <article class="article">
+					        <a class="icon_outer fancybox" href="/media/{{ entry.image }}">
+								{% thumbnail entry.image "400x200" crop="center" as im %}
+						            <img class="icon" src="{{ im.url }}" alt="{{ entry.title }}" title="{{ entry.title }}" width="{{ im.width }}" height="{{ im.height }}" />
+						     	{% endthumbnail %}  	        
+					        </a>
+					        
+					        <div class="text_outer">
+					            <h3 class="h3">{{ entry.title }}<time class="time" datetime="11-01-2009">{{ entry.date_event|date:"SHORT_DATE_FORMAT" }}</time></h3>
+					            
+					            {{ entry.teaser }}
+					            
+					            <div>
+					            	<a class="more_link" href="#">Подробнее</a>
+
+									<div class="info hide">
+										{{ entry.text }}
+									</div>	            	
+					            </div>
+					        </div>                              
+					    </article>    
+				    {% endfor %}                     
+				</section> 
+
+				{% if last_page > 1 %}
+					<div class="pager_outer">	
+						<div class="pager">	
+							{% if get_all_entries_paginated.has_previous %}
+								<button type="button" class="btn btn-default">
+									<a class="a left2 glyphicon glyphicon-fast-backward" href="?page={{ first_page }}"></a>
+								</button>								
+
+								<button type="button" class="btn btn-default">
+									<a class="a left glyphicon glyphicon-backward" href="?page={{ get_all_entries_paginated.previous_page_number }}"></a>
+								</button>								
+							{% endif %}
+							
+							<span>
+								{% for page in list_pages  %}
+									<div class="btn-group">
+										{% if get_all_entries_paginated.number == page %}
+											<button type="button" class="btn btn-default">
+												<span class="a glyphicon">{{ page }}</span>
+											</button>
+										{% else %}
+											<button type="button" class="btn btn-default">
+												<a class="a num glyphicon" href="?page={{ page }}">{{ page }}</a>
+											</button>							
+										{% endif %}
+									</div>
+								{% endfor %}		
+							</span>
+							
+							{% if get_all_entries_paginated.has_next %}
+								<button type="button" class="btn btn-default">
+									<a class="a right glyphicon glyphicon-forward" href="?page={{ get_all_entries_paginated.next_page_number }}"></a>
+								</button>		
+
+								<button type="button" class="btn btn-default">
+									<a class="a right2 glyphicon glyphicon-fast-forward" href="?page={{ last_page }}"></a>
+								</button>														
+							{% endif %}
+						</div>				
+					</div>	
+				{% endif %}					         
+            </section>
+        </div>                 
+    </div>
+{% endblock content %}
