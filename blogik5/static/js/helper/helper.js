@@ -1,4 +1,13 @@
 (function (){
+	// -------------------------------------------------------------------------------------- main menu selection
+	$('.nav_main ul ul .selected').each(function(){
+		$(this).closest('ul').closest('li').addClass('selected');
+	});
+
+
+
+	
+
 	// -------------------------------------------------------------------------------------- feedback
 	$('.nav_main .mail_link').on('click', function(event){	
 		event.preventDefault();
