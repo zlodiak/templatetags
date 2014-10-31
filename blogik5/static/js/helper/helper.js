@@ -45,7 +45,32 @@
 		};	
 
 		if(!flag){
-			$('#feedbackForm').submit();
+			//$('#feedbackForm').submit();	
+
+			$.get(
+				"/feedback/",
+				{
+					author: authorVal,
+					subject: subjectVal,
+					message: messageVal
+				},
+				function onAjaxSuccess(data){
+					console.log('success');
+
+					author.val('');
+					subject.val('');
+					message.val('');
+
+					$('#modal-10').modal('hide');
+
+					$('#mySmallModalLabel').text('Сообщение отправлено');
+					$('#infoModal').modal('show');
+
+					setTimeout(function(){
+						$('#infoModal').modal('hide');
+					}, 2000);					
+				}
+			);				
 		};	
 	});
 
@@ -61,10 +86,10 @@
 		//console.log(head);
 		//console.log(text);
 
-		$('#modal-9 .modal-body').html(text);
-		$('#modal-9 .modal-title').html(head);
+		$('#modal-10 .modal-body').html(text);
+		$('#modal-10 .modal-title').html(head);
 
-		$('#modal-9').modal();
+		$('#modal-10').modal();
 	});	
 })();
 
