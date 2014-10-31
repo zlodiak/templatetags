@@ -2,6 +2,7 @@
 from datetime import datetime  
 
 from sorl.thumbnail import ImageField
+#from djangocms_text_ckeditor.fields import HTMLField
 
 
 class News(models.Model):

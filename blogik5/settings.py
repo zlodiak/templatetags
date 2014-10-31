@@ -142,6 +142,7 @@ INSTALLED_APPS = (
     'app_slider',
     'sorl.thumbnail',
     'app_news',
+    'app_feedback',
 )
 
 LANGUAGES = (
@@ -181,6 +182,7 @@ CMS_TEMPLATES = (
     ('sidebar_left.html', 'Sidebar Left'),
     ('sidebar_right.html', 'Sidebar Right'),
     ('news.html', 'News'),
+    ('footer.html', 'Footer'),
 )
 
 CMS_PERMISSION = True

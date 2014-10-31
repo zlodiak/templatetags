@@ -205,7 +205,129 @@ input:-moz-placeholder {
 	}
 
 
+/*************************************************************************************************************** GLOBAL_blocks :  .common_form */
+.common_form{
+
+}
+
+	.common_form .cell{
+		padding-bottom: 12px;
+		overflow: hidden;
+	}
+	
+		.common_form .cell a{
+			margin-right: 130px;
+		}
+	
+		.common_form .cell .label:after{
+			content: ':';
+		}
+		
+		.common_form .textarea_outer .label:after{
+			content: ':';
+			
+			vertical-align: top;
+		}		
+		
+		.common_form .cell .label{
+			font: 12px arial, sans-serif;
+			color: #444;
+			
+			min-height: 23px;
+			width: 160px;
+			display: block;
+			float: left;
+			padding-right: 17px;	
+			padding-top: 10px;	
+		}
+
+		
+		.common_form .input_outer select,
+		.common_form .textarea_outer textarea,
+		.common_form .input_outer input{
+			background: #fff;
+			border: 1px solid #e0e0e0;
+			height: 33px;
+			width: 208px;
+			padding: 0 5px;
+			overflow: hidden;
+			float: left;
+			
+			font: 12px arial, sans-serif;
+			color: #444;
+		}
+		
+		.common_form .textarea_outer textarea{
+			width: 416px;
+		}
+		
+		.common_form .input_outer select{
+			width: 220px;
+		}
+
+		.common_form .captcha_outer input{
+			width: 109px;
+		}
+		
+			.common_form .captcha_outer img{
+				display: block;
+				float: left;
+				margin-right: 20px;
+				width: 77px;
+				height: 33px;
+				border: 1px solid #e0e0e0;
+			}
+		
+		.common_form .submit_outer input{
+
+		}		
+		
+		.common_form .textarea_outer label{
+			vertical-align: top;
+		}
+		
+		.common_form .textarea_outer textarea{
+			height: 170px;	
+			padding: 5px;	
+		}			
+		
+		.common_form .input_outer select{
+		
+		}		
+		
+		.common_form .submit_outer input{
+			margin-left: 176px;
+		}	
+
+		.common_form .cell .errorlist{
+			color: red;
+			font: 12px arial, sans-serif;
+			
+			padding-top: 10px;
+			padding-left: 12px;
+			float: left;
+			width: 300px;
+		}
+
+			.common_form .input_outer .shine{
+				background: red;
+				
+				color: #fff;
+			}			
+		
+		.common_form  .textarea_message .errorlist{
+			padding-left: 177px;
+		}
+		
+		.common_form .cell .image_outer{
+		
+		}
+
+
+	
+
 /*************************************************************************************************************** GLOBAL_blocks : modal-9 */
+.modal,
 #modal-9 {
 	color: #000;
 }

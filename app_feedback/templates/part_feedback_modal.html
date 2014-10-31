@@ -1,0 +1,43 @@
+<div class="modal fade" id="modal-10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class="feedback_form common_form" id="feedbackForm" action="/feedback/" method="POST">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Сообщение для вебмастера.</h4>
+                </div>
+                
+                <div class="modal-body">
+                    {% csrf_token %}
+                    
+                    <div class="cell input_outer">
+                        <label class="label">{{ form.author.label }}</label>
+                        
+                        {{ form.author }}
+                        
+                        {{ form.author.errors }}
+                    </div>
+
+                    <div class="cell input_outer">
+                        <label class="label">{{ form.subject.label }}</label>
+                        
+                        {{ form.subject }}
+                        
+                        {{ form.subject.errors }}
+                    </div>
+
+                    <div class="cell input_outer">
+                        <label class="label">{{ form.message.label }}</label>
+                        
+                        {{ form.message }}
+                        
+                        {{ form.message.errors }}
+                    </div>            
+                </div>
+                
+                <div class="modal-footer">
+                    <input class="btn btn-default" id="submitFeedback" type="submit" value="Отправить" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

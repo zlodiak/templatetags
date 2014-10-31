@@ -1,4 +1,4 @@
-{% load cms_tags staticfiles sekizai_tags menu_tags tags_slider %}
+{% load cms_tags staticfiles sekizai_tags menu_tags tags_slider tags_feedback %}
 
 <!DOCTYPE html>
 <html>
@@ -54,7 +54,6 @@
             
             <div class="content">
                 {% block content %}{% endblock content %}   
-            }
             </div>
             
             <div class="footer_correct"></div>
@@ -62,9 +61,7 @@
         
         <footer class="footer">
             <div class="footer_inner width1100 content_format">
-                <p>2003-2009 © ООО «ТЕСТ»</p>
-                <p>Тестовое задание для определения навыков</p>
-                <a href="mailto:info@test.ru">info@test.ru</a>
+                {% static_placeholder "copyright" %}
             </div>
         </footer>    
 
@@ -85,7 +82,9 @@
                     </div>
                 </div>
             </div>
-        </div>                         
+        </div>  
+
+        {% part_feedback_modal %}                       
 
         <!-- jquery -->
         <script src="{% static 'js/jquery/jquery.2.min.js' %}"></script>
