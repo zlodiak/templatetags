@@ -19,7 +19,6 @@
 
 		if(!authorVal){
 			author.addClass('shine');
-			
 			flag = true;
 		}
 		else{
@@ -28,7 +27,6 @@
 
 		if(!subjectVal){
 			subject.addClass('shine');
-			
 			flag = true;
 		}
 		else{
@@ -37,7 +35,6 @@
 
 		if(!messageVal){
 			message.addClass('shine');
-			
 			flag = true;
 		}
 		else{
@@ -45,8 +42,6 @@
 		};	
 
 		if(!flag){
-			//$('#feedbackForm').submit();	
-
 			$.get(
 				"/feedback/",
 				{
