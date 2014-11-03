@@ -8,36 +8,32 @@
 {% block content %}
     <div class="content_inner width1100 clearfix">    
         <div class="main content_format width_auto">
-            <section class="section main_section width_auto">
+            <section class="section main_section width_auto all_news">
                 <h2 class="h2 ">{% page_attribute "title" %}</h2>
-                 
-				<section class="section all_news">
-				    <h2 class="h2 hide">Новости</h2>
+                
+			    {% for entry in get_all_entries_paginated %}
+				    <article class="article">
+				        <a class="icon_outer fancybox" href="/media/{{ entry.image }}">
+							{% thumbnail entry.image "400x200" crop="center" as im %}
+					            <img class="icon" src="{{ im.url }}" alt="{{ entry.title }}" title="{{ entry.title }}" width="{{ im.width }}" height="{{ im.height }}" />
+					     	{% endthumbnail %}  	        
+				        </a>
+				        
+				        <div class="text_outer">
+				            <h3 class="h3">{{ entry.title }}<time class="time" datetime="11-01-2009">{{ entry.date_event|date:"SHORT_DATE_FORMAT" }}</time></h3>
+				            
+				            {{ entry.teaser }}
+				            
+				            <div>
+				            	<a class="more_link" href="#">Подробнее</a>
 
-				    {% for entry in get_all_entries_paginated %}
-					    <article class="article">
-					        <a class="icon_outer fancybox" href="/media/{{ entry.image }}">
-								{% thumbnail entry.image "400x200" crop="center" as im %}
-						            <img class="icon" src="{{ im.url }}" alt="{{ entry.title }}" title="{{ entry.title }}" width="{{ im.width }}" height="{{ im.height }}" />
-						     	{% endthumbnail %}  	        
-					        </a>
-					        
-					        <div class="text_outer">
-					            <h3 class="h3">{{ entry.title }}<time class="time" datetime="11-01-2009">{{ entry.date_event|date:"SHORT_DATE_FORMAT" }}</time></h3>
-					            
-					            {{ entry.teaser }}
-					            
-					            <div>
-					            	<a class="more_link" href="#">Подробнее</a>
-
-									<div class="info hide">
-										{{ entry.text }}
-									</div>	            	
-					            </div>
-					        </div>                              
-					    </article>    
-				    {% endfor %}                     
-				</section> 
+								<div class="info hide">
+									{{ entry.text }}
+								</div>	            	
+				            </div>
+				        </div>                              
+				    </article>    
+			    {% endfor %}                     
 
 				{% if last_page > 1 %}
 					<div class="pager_outer">	
